@@ -4,30 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!--Links Favicon, Bootrstrap & customized style.css-->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+
+  <!--fontfamily-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Equalizer landing page</title>
 </head>
 <body>
 
-  We make your music sound extraordinary.
+  <!--Header with a single logo-->
+  <header id="header">
+    <div class="container logo__container">
+      <span class="logo"><img src="assets/logo.svg" alt="Logo"></span>
+    </div>
+  </header>
 
-  A system audio equalizer specifically designed for Android and iOS. Freely tune the 
-  way your music sounds with a professional grade parametric EQ & volume mixer. Control 
-  bass, mids, treble, gain control, reverb, and more!
+  <!--Hero-Section with a title, description and a img-element from mobile-version-->
+  <section id="hero">
+    <div class="container">
+      <div class="text__container">
+        <h1>We make your music sound extraordinary.</h1>
+        <p>A system audio equalizer specifically designed for Android and iOS. Freely tune the 
+          way your music sounds with a professional grade parametric EQ & volume mixer. Control 
+          bass, mids, treble, gain control, reverb, and more!</p>
+      </div>
+      <img src="assets/bg-pattern-1.svg" alt="A abstract picture with rounded forms">
+    </div>
+  </section>
 
-  Premium EQ
+  <!--Main-Section with an black background with a graphic element. There are a smartphone and a card as further graphic elements with a description and a price-->
+  <section id="main">
+    <div class="container">
+      <img src="assets/illustration-app.png" alt="A smartphone with an opened App">
+      <div class="card">
+        <div class="card__body">
+          <h2 class="card__title">Premium EQ</h2>
+          <p class="card__text">Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
+            your listening experience to a whole new level and access all our incredible features!</p>
+          <span class="card__pricing">$4 / month</span>
+          <div class="btn">
+            <span class="Icon"><a href="#">iOS Download</a></span>
+          </div>
+          <div class="btn">
+            <span class="Icon"><a href="#">Android Download</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
-  your listening experience to a whole new level and access all our incredible features!
-
-  $4 / month
-
-  iOS Download
-  Android Download
-
-  All rights reserved © Equalizer 2021
-  Have any problems? Contact us via social media or email us at equalizer@example.com
+  <!--Footer with a logo, a legal- and contact-Information, icons with social-links -->
+  <footer id="header">
+    <div class="container footer__container">
+      <div class="logo__container">
+        <span class="logo"><img src="assets/logo.svg" alt="Logo"></span>
+      </div>
+      <div class="information__container">
+        <p class="legal__information">All rights reserved © Equalizer 2021</p>
+        <p class="contact__information">Have any problems? Contact us via social media or email us at <span><a href="mailto:nequalizer@example.com">nequalizer@example.com</a></span></p>
+      </div>
+      <div class="social__container">
+        <img src="assets/icon-facebook.svg" alt="Icon Facebook">
+        <img src="assets/icon-instagram.svg" alt="Icon Instagram">
+        <img src="assets/icon-twitter.svg" alt="Icon Twitter">
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
