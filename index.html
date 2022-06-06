@@ -22,40 +22,43 @@
 
   <!--Header with a single logo-->
   <header id="header">
-    <div class="container logo__container">
-      <span class="logo"><img src="assets/logo.svg" alt="Logo"></span>
-    </div>
-  </header>
-
-  <!--Hero-Section with a title, description and a img-element from mobile-version-->
-  <section id="hero">
-    <div class="container">
-      <div class="text__container">
-        <h1>We make your music sound extraordinary.</h1>
-        <p>A system audio equalizer specifically designed for Android and iOS. Freely tune the 
+    <div class="container header-container">
+      <div class="logo-container">
+        <span class="logo"><img src="assets/logo.svg" alt="Logo"></span>
+      </div>
+      <div class="text-container">
+        <h1 class="header-title">We make your music sound extraordinary.</h1>
+        <p class="header-description">A system audio equalizer specifically designed for Android and iOS. Freely tune the 
           way your music sounds with a professional grade parametric EQ & volume mixer. Control 
           bass, mids, treble, gain control, reverb, and more!</p>
       </div>
-      <img src="assets/bg-pattern-1.svg" alt="A abstract picture with rounded forms">
+      <img class="header-img" src="assets/bg-pattern-1.svg" alt="A abstract picture with rounded forms">
     </div>
-  </section>
+  </header>
 
   <!--Main-Section with an black background with a graphic element. There are a smartphone and a card as further graphic elements with a description and a price-->
   <section id="main">
-    <div class="container">
-      <img src="assets/illustration-app.png" alt="A smartphone with an opened App">
-      <div class="card">
-        <div class="card__body">
-          <h2 class="card__title">Premium EQ</h2>
-          <p class="card__text">Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
+    <div class="container main-container">
+      <img class="main-img--mobile" src="assets/illustration-app.png" alt="A smartphone with an opened App">
+      <img class="main-img--abstract" src="assets/bg-pattern-2.svg" alt="A abstract picture with forms">
+      <div class="main-card">
+        <div class="card-body">
+          <h2 class="card-title">Premium EQ</h2>
+          <p class="card-text">Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
             your listening experience to a whole new level and access all our incredible features!</p>
-          <span class="card__pricing">$4 / month</span>
-          <div class="btn">
-            <span class="Icon"><a href="#">iOS Download</a></span>
-          </div>
-          <div class="btn">
-            <span class="Icon"><a href="#">Android Download</a></span>
-          </div>
+          <p class="card-pricing"><span class="card-pricing--big">$4</span>/ month</p>
+          <button type="button" class="btn btn-primary">
+            <a class="btn-download" href="">
+              <img class="btn-icon" src="/assets/icon-apple.svg" alt="Apple Icon for Download" aria-hidden="true"/>
+            </a>
+          iOS Download
+          </button>
+          <button type="button" class="btn btn-secondary">
+            <a class="btn-download" href="">
+              <img class="btn-icon" src="/assets/icon-android.svg" alt="Android Icon for Download" aria-hidden="true"/>
+            Android Download
+            </a>
+          </button>
         </div>
       </div>
     </div>
@@ -63,15 +66,15 @@
 
   <!--Footer with a logo, a legal- and contact-Information, icons with social-links -->
   <footer id="header">
-    <div class="container footer__container">
-      <div class="logo__container">
+    <div class="container footer-container">
+      <div class="logo-container">
         <span class="logo"><img src="assets/logo.svg" alt="Logo"></span>
       </div>
-      <div class="information__container">
-        <p class="legal__information">All rights reserved © Equalizer 2021</p>
-        <p class="contact__information">Have any problems? Contact us via social media or email us at <span><a href="mailto:nequalizer@example.com">nequalizer@example.com</a></span></p>
+      <div class="information-container">
+        <p class="legal-information">All rights reserved © Equalizer 2021</p>
+        <p class="contact-information">Have any problems? Contact us via social media or email us at <span><a href="mailto:nequalizer@example.com">nequalizer@example.com</a></span></p>
       </div>
-      <div class="social__container">
+      <div class="social-container">
         <img src="assets/icon-facebook.svg" alt="Icon Facebook">
         <img src="assets/icon-instagram.svg" alt="Icon Instagram">
         <img src="assets/icon-twitter.svg" alt="Icon Twitter">

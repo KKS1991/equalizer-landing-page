@@ -5,3 +5,34 @@
  * - 
  *
  **/
+
+ /* Button */
+
+.btn {
+
+}
+
+.btn-primary {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    border: none;
+    font-family: var(--ff-general);
+    font-size: var(--fs-body);
+    font-weight: bold;
+}
+
+.btn-secondary {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    border: none;
+    font-family: var(--ff-general);
+    font-size: var(--fs-body);
+    font-weight: bold;
+}
+
+.btn-download {
+    font-family: var(--ff-general);
+    font-size: var(--fs-body);
+    font-weight: bold;
+    text-decoration: none;
+}

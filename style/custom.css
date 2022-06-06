@@ -17,23 +17,17 @@
     --ff-general: 'IBM Plex Sans', sans-serif;
 
     /*** Fonts-Maintitle*/
-    --fs-maintitle: 5.5rem;
+    --fs-maintitle: 2.5rem;
     --fw-maintitle: bold;
-    --lh-maintitle: 5.5rem;
     --sp-maintitle: -1px;
 
     /*** Fonts-Subtitle*/
-    --fs-subtitle: 2.5rem;
+    --fs-subtitle: 1.5rem;
     --fw-subtitle: bold;
-    --lh-subtitle: 3.25rem;
     
-    /*** Fonts-body-large*/
-    --fs-body-large: 1.25rem;
-    --lh-body-large: 2.125rem;
-
-    /*** Fonts-body-small*/
-    --fs-body-large: 1rem;
-    --lh-body-large: 1.625rem;
+    /*** Fonts Body*/
+    --fs-body: 0.9rem;
+    --lh-body: 1.625rem;
 
     /* Colors */
     --clr-green: #66e2dc;
@@ -43,10 +37,23 @@
     --clr-dark: #191826; 
 }
 
+/***
+ * 
+ * General layout settings
+ *
+***/
+
 body {
-    background-image: url('assets/bg-main-mobile.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
+    margin: 0 auto;
 }
+
+h1,
+h2,
+p {
+    overflow-wrap: break-word;
+}
+
+
+
+
 

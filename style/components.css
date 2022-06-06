@@ -5,3 +5,130 @@
  * - 
  *
  **/
+
+ :root {
+    /* Typhography */
+
+    /** Fonts */
+    --ff-general: 'IBM Plex Sans', sans-serif;
+
+    /*** Fonts-Maintitle*/
+    --fs-maintitle: 2.5rem;
+    --fw-maintitle: bold;
+    --sp-maintitle: -1px;
+
+    /*** Fonts-Subtitle*/
+    --fs-subtitle: 1.5rem;
+    --fw-subtitle: bold;
+    
+    /*** Fonts Body*/
+    --fs-body: 1rem;
+    --lh-body: 1.625rem;
+
+    /* Colors */
+    --clr-green: #66e2dc;
+    --clr-red: #fa7453;
+    --clr-yellow: #ffb964;
+    --clr-light: #fcfaf9;
+    --clr-dark: #191826; 
+}
+
+ /* Header */
+
+ .header-container {
+    padding-top: 1.5rem;
+    padding-bottom: 10rem;
+    background-image: url('/assets/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.header-img {
+    display: none;
+}
+
+.logo-container {  
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+ }
+
+.header-title {
+    font-family: var(--ff-general);
+    font-size: var(--fs-maintitle);
+    font-weight: var(--fw-maintitle);
+}
+
+.header-description {
+    font-family: var(--ff-general);
+    font-size: var(--fs-body);
+}
+
+/* Main */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 2rem;
+    border-radius: 10px;
+    background-color: var(--clr-dark);
+}
+
+.main-img--mobile {
+    position: relative;
+    width: 50%;
+    align-self: center;
+    top: -8rem;
+    z-index: 1;
+}
+
+.main-img--abstract {
+    position: relative;
+    width: 65%;
+    align-self: center;
+    top: -25rem
+}
+
+.main-card {
+    position: relative;
+    background-color: var(--clr-red);
+    padding: 2rem;
+    border-radius: 10px;
+    top: -27rem;
+    z-index: 1;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-family: var(--ff-general);
+    font-size: var(--fs-subtitle);
+    font-weight: var(--fw-subtitle);
+    margin-bottom: 0.5rem;
+    color: var(--clr-light);
+}
+
+.card-text {
+    font-family: var(--ff-general);
+    font-size: var(--fs-body);
+    color: var(--clr-light);
+    line-height: var(--lh-body);
+}
+
+.card-pricing {
+    font-family: var(--ff-general);
+    font-size: var(--fs-body);
+    color: var(--clr-light);
+}
+
+.card-pricing--big {
+    font-family: var(--ff-general);
+    color: var(--clr-light);
+    font-weight: bold;
+    font-size: 3rem;
+}
