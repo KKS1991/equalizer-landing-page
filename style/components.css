@@ -4,6 +4,7 @@
  *Index
  * - 
  *
+ * /// - Mobile-First - ///
  **/
 
  :root {
@@ -13,16 +14,18 @@
     --ff-general: 'IBM Plex Sans', sans-serif;
 
     /*** Fonts-Maintitle*/
-    --fs-maintitle: 2.5rem;
+    --fs-maintitle-mobile: 2.5rem;
+    --fs-maintitle-tablet: 4rem;
+    --fs-maintitle-desktop: 6rem;
     --fw-maintitle: bold;
     --sp-maintitle: -1px;
 
     /*** Fonts-Subtitle*/
-    --fs-subtitle: 1.5rem;
+    --fs-subtitle: 2rem;
     --fw-subtitle: bold;
     
     /*** Fonts Body*/
-    --fs-body: 1rem;
+    --fs-body: 1.25rem;
     --lh-body: 1.625rem;
 
     /* Colors */
@@ -33,29 +36,29 @@
     --clr-dark: #191826; 
 }
 
- /* Header */
+/***
+ * 
+ * Header
+ *
+***/
 
- .header-container {
-    padding-top: 1.5rem;
+.header-container {
     padding-bottom: 10rem;
-    background-image: url('/assets/bg-main-mobile.png');
-    background-repeat: no-repeat;
-    background-position: left center;
+}
+
+.logo-container-header {
+    margin-top: 2rem;
 }
 
 .header-img {
     display: none;
 }
 
-.logo-container {  
-    margin-top: 2rem;
-    margin-bottom: 2rem;
- }
-
 .header-title {
     font-family: var(--ff-general);
-    font-size: var(--fs-maintitle);
+    font-size: var(--fs-maintitle-mobile);
     font-weight: var(--fw-maintitle);
+    margin-top: 3rem;
 }
 
 .header-description {
@@ -63,53 +66,55 @@
     font-size: var(--fs-body);
 }
 
-/* Main */
+/***
+ * 
+ * Main
+ *
+***/
 
 .main-container {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     position: relative;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 2rem;
     border-radius: 10px;
     background-color: var(--clr-dark);
 }
 
+.main-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0.5rem;
+    background-image: url(/assets/bg-pattern-2.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    height: 100%;
+    width: 100%;
+}
+
 .main-img--mobile {
-    position: relative;
-    width: 50%;
-    align-self: center;
-    top: -8rem;
-    z-index: 1;
+    margin: 0 auto;
+    transform: translateY(-8rem);
+    width: 55%;
 }
 
-.main-img--abstract {
-    position: relative;
-    width: 65%;
-    align-self: center;
-    top: -25rem
-}
-
-.main-card {
-    position: relative;
-    background-color: var(--clr-red);
-    padding: 2rem;
-    border-radius: 10px;
-    top: -27rem;
-    z-index: 1;
-}
-
-.card-body {
+.card {
     display: flex;
+    position: relative;
     flex-direction: column;
+    background-color: var(--clr-red);
+    border-radius: 10px;
+    border: none;
+    padding: 2rem;
 }
 
 .card-title {
     font-family: var(--ff-general);
     font-size: var(--fs-subtitle);
     font-weight: var(--fw-subtitle);
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     color: var(--clr-light);
 }
 
@@ -124,6 +129,8 @@
     font-family: var(--ff-general);
     font-size: var(--fs-body);
     color: var(--clr-light);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .card-pricing--big {
@@ -132,3 +139,191 @@
     font-weight: bold;
     font-size: 3rem;
 }
+
+/***
+ * 
+ * Footer
+ *
+***/
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.logo-container-footer {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.information-container {
+    margin-bottom: 2rem;
+}
+
+.legal-information {
+    margin-bottom: 0.1rem;
+}
+
+.email {
+    display: block;
+    text-decoration: none;
+    color: var(--clr-dark);
+    font-weight: bold;
+}
+
+.social-container {
+    display: flex;
+}
+
+.social-icon-link ~ a {
+    padding-left: 1rem;
+}
+
+/***** Tablet-Version *****/
+
+@media (min-width: 768px) {
+
+    /*--Header--*/
+
+    .text-container {
+        margin-top: 4rem;
+        margin-bottom: 5.5rem;
+        max-width: 500px;
+    }
+
+    .header-title {
+        font-size: var(--fs-maintitle-tablet);
+        margin-bottom: 2rem;
+    }
+
+    .header-img {
+        display: block;
+        position: absolute;
+        right: -2rem;
+        top: -2rem;
+    }
+
+    /*--Main--*/
+
+    .main-container {
+        padding-bottom: 0;
+        margin-bottom: 1rem;
+    }
+
+    .main-container::before {
+        top: 2.5rem;
+        left: 11rem;
+        background-size: 50%;
+        height: 100%;
+        width: 80%;
+    }
+    
+    .main-img--mobile {
+        margin-left: 2rem;
+        transform: translateY(-11rem);
+        width: 55%;
+    }
+    
+    .card {
+        position: absolute;
+        width: 55%;
+        top: 16rem;
+        right: 2rem;
+        padding: 3rem;
+    }
+
+    /*--Footer--*/
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 2rem;
+    }
+
+    .logo-container-footer {
+        flex-basis: 40rem;
+        margin-top: 4rem;
+    }
+
+    .information-container {
+        max-width: 400px;
+    }
+
+    .email {
+        display: inline;
+    }
+
+    .social-container {
+        flex-basis: 10rem;
+        padding-top: 2rem;
+        height: 20%;
+    }
+}
+
+/***** Desktop-Version *****/
+
+  @media (min-width: 1440px) {
+
+    /*--Header--*/
+
+    .header-container {
+        margin-bottom: 4rem;
+    }
+
+    .header-title {
+        font-size: var(--fs-maintitle-desktop);
+        width: 1000px;
+    }
+
+    .text-container {
+        max-width: 800px;
+    }
+
+    /*--Main--*/
+
+    .main-container::before {
+        top: 5rem;
+        left: 20.5rem;
+        background-size: 50%;
+        height: 100%;
+        width: 50%;
+    }
+
+    .main-img--mobile {
+        margin-left: 11rem;
+        transform: translateY(-15rem);
+        width: 30%;
+    }
+
+    .card {
+        position: absolute;
+        width: 35%;
+        top: 14rem;
+        right: 8rem;
+        padding: 5rem;
+    }
+
+  }
+
+@media (min-width: 1200px) {
+    
+    /*--Footer--*/
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
+
+    .logo-container-footer {
+        flex-basis: 0;
+        margin-top: 0;
+    }
+
+    .social-container {
+        flex-basis: 0;
+    }
+ }

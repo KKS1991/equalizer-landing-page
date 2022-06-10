@@ -4,12 +4,42 @@
  *Index
  * - 
  *
+ * /// - Mobile-First - ///
  **/
+
+ :root {
+    /* Typhography */
+
+    /** Fonts */
+    --ff-general: 'IBM Plex Sans', sans-serif;
+
+    /*** Fonts-Maintitle*/
+    --fs-maintitle-mobile: 2.5rem;
+    --fs-maintitle-tablet: 3.5rem;
+    --fs-maintitle-desktop: 6rem;
+    --fw-maintitle: bold;
+    --sp-maintitle: -1px;
+
+    /*** Fonts-Subtitle*/
+    --fs-subtitle: 2rem;
+    --fw-subtitle: bold;
+    
+    /*** Fonts Body*/
+    --fs-body: 1.25rem;
+    --lh-body: 1.625rem;
+
+    /* Colors */
+    --clr-green: #66e2dc;
+    --clr-red: #fa7453;
+    --clr-yellow: #ffb964;
+    --clr-light: #fcfaf9;
+    --clr-dark: #191826; 
+}
 
  /* Button */
 
 .btn {
-
+    padding: 1rem;
 }
 
 .btn-primary {
@@ -21,6 +51,10 @@
     font-weight: bold;
 }
 
+.btn-primary:hover {
+    background-color: var(--clr-green);
+}
+
 .btn-secondary {
     background-color: var(--clr-light);
     color: var(--clr-dark);
@@ -28,6 +62,12 @@
     font-family: var(--ff-general);
     font-size: var(--fs-body);
     font-weight: bold;
+    margin-top: 1rem;
+}
+
+.btn-secondary:hover {
+    background-color: var(--clr-yellow);
+    color: var(--clr-dark);
 }
 
 .btn-download {

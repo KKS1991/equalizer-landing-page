@@ -23,7 +23,7 @@
   <!--Header with a single logo-->
   <header id="header">
     <div class="container header-container">
-      <div class="logo-container">
+      <div class="logo-container-header">
         <span class="logo"><img src="assets/logo.svg" alt="Logo"></span>
       </div>
       <div class="text-container">
@@ -40,44 +40,43 @@
   <section id="main">
     <div class="container main-container">
       <img class="main-img--mobile" src="assets/illustration-app.png" alt="A smartphone with an opened App">
-      <img class="main-img--abstract" src="assets/bg-pattern-2.svg" alt="A abstract picture with forms">
-      <div class="main-card">
-        <div class="card-body">
-          <h2 class="card-title">Premium EQ</h2>
-          <p class="card-text">Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
-            your listening experience to a whole new level and access all our incredible features!</p>
-          <p class="card-pricing"><span class="card-pricing--big">$4</span>/ month</p>
-          <button type="button" class="btn btn-primary">
-            <a class="btn-download" href="">
-              <img class="btn-icon" src="/assets/icon-apple.svg" alt="Apple Icon for Download" aria-hidden="true"/>
-            </a>
+      <div class="card">
+        <h2 class="card-title">Premium EQ</h2>
+        <p class="card-text">Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
+          your listening experience to a whole new level and access all our incredible features!</p>
+        <p class="card-pricing"><span class="card-pricing--big">$4</span>/ month</p>
+        <button type="button" class="btn btn-primary">
+          <a class="btn-download" href="">
+            <img class="btn-icon" src="/assets/icon-apple.svg" alt="Apple Icon for Download" aria-hidden="true"/>
+          </a>
           iOS Download
-          </button>
-          <button type="button" class="btn btn-secondary">
-            <a class="btn-download" href="">
-              <img class="btn-icon" src="/assets/icon-android.svg" alt="Android Icon for Download" aria-hidden="true"/>
-            Android Download
-            </a>
-          </button>
-        </div>
+        </button>
+        <button type="button" class="btn btn-secondary">
+          <a class="btn-download" href="">
+            <img class="btn-icon" src="/assets/icon-android.svg" alt="Android Icon for Download" aria-hidden="true"/>
+          </a>
+          Android Download
+        </button>
       </div>
     </div>
   </section>
 
   <!--Footer with a logo, a legal- and contact-Information, icons with social-links -->
-  <footer id="header">
+  <footer id="footer">
     <div class="container footer-container">
-      <div class="logo-container">
+      <div class="logo-container-footer">
         <span class="logo"><img src="assets/logo.svg" alt="Logo"></span>
       </div>
       <div class="information-container">
         <p class="legal-information">All rights reserved © Equalizer 2021</p>
-        <p class="contact-information">Have any problems? Contact us via social media or email us at <span><a href="mailto:nequalizer@example.com">nequalizer@example.com</a></span></p>
+        <p class="contact-information">Have any problems? Contact us via social media or email us at 
+          <span><a class="email" href="mailto:nequalizer@example.com">nequalizer@example.com</a></span>
+        </p>
       </div>
       <div class="social-container">
-        <img src="assets/icon-facebook.svg" alt="Icon Facebook">
-        <img src="assets/icon-instagram.svg" alt="Icon Instagram">
-        <img src="assets/icon-twitter.svg" alt="Icon Twitter">
+          <a href="#" class="social-icon-link"><img class="social-icon" src="assets/icon-facebook.svg" alt="Icon Facebook"></a>
+          <a href="#" class="social-icon-link"><img class="social-icon" src="assets/icon-instagram.svg" alt="Icon Instagram"></a>
+          <a href="#" class="social-icon-link"><img class="social-icon" src="assets/icon-twitter.svg" alt="Icon Twitter"></a>
       </div>
     </div>
   </footer>

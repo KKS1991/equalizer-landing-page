@@ -4,10 +4,13 @@
  *Index
  * - 
  *
+ * /// - Mobile-First - ///
  **/
 
 *, *::before, *::after {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 :root {
@@ -17,16 +20,18 @@
     --ff-general: 'IBM Plex Sans', sans-serif;
 
     /*** Fonts-Maintitle*/
-    --fs-maintitle: 2.5rem;
+    --fs-maintitle-mobile: 2.5rem;
+    --fs-maintitle-tablet: 3.5rem;
+    --fs-maintitle-desktop: 6rem;
     --fw-maintitle: bold;
     --sp-maintitle: -1px;
 
     /*** Fonts-Subtitle*/
-    --fs-subtitle: 1.5rem;
+    --fs-subtitle: 2rem;
     --fw-subtitle: bold;
     
     /*** Fonts Body*/
-    --fs-body: 0.9rem;
+    --fs-body: 1.25rem;
     --lh-body: 1.625rem;
 
     /* Colors */
@@ -44,7 +49,10 @@
 ***/
 
 body {
-    margin: 0 auto;
+    background-image: url('/assets/bg-main-mobile.png');
+    background-position: 5% -20%;
+    background-repeat: no-repeat;
+    padding: 0;
 }
 
 h1,
@@ -53,7 +61,25 @@ p {
     overflow-wrap: break-word;
 }
 
+/***** Tablet-Version *****/
 
+@media (min-width: 768px) {
 
+    body {
+        background-image: url('/assets/bg-main-tablet.png');
+        background-repeat: no-repeat;
+        background-position: 70% -30%;
+    }
+}
 
+/***** Desktop-Version *****/
+
+@media (min-width: 1440px) {
+
+    body {
+        background-image: url('/assets/bg-main-desktop.png');
+        background-repeat: no-repeat;
+        background-position: 100%;
+    }
+}
 
