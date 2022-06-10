@@ -1,11 +1,24 @@
 /**
  *components.css
  *
+ * /// - Mobile-First Approach -///
  *Index
- * - 
  *
- * /// - Mobile-First - ///
+ * - Variables (17 - 50)
+ * - Header (52 - 80)
+ * - Main (82 - 154)
+ * - Footer (156 - 195)
+ * //
+ * - Tablet-Version (197 - 277)
+ * - Desktop-Version (279 - 342)
+ *
  **/
+
+/***
+ * 
+ * Variables
+ *
+***/
 
  :root {
     /* Typhography */
@@ -86,7 +99,7 @@
     position: absolute;
     top: 0;
     left: 0.5rem;
-    background-image: url(/assets/bg-pattern-2.svg);
+    background-image: url(assets/bg-pattern-2.svg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 80%;

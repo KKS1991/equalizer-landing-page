@@ -1,11 +1,19 @@
 /**
- *bootstrap-custom.css
+ *bootstrap.css
  *
+ * /// - Mobile-First Approach -///
  *Index
- * - 
  *
- * /// - Mobile-First - ///
+ * - Variables (12 - 45)
+ * - Button (47 - 90)
+ *
  **/
+
+ /***
+ * 
+ * Variables
+ *
+***/
 
  :root {
     /* Typhography */
@@ -36,7 +44,11 @@
     --clr-dark: #191826; 
 }
 
- /* Button */
+ /***
+ * 
+ * Button
+ *
+***/
 
 .btn {
     padding: 1rem;
