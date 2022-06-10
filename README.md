@@ -65,6 +65,8 @@ Doesn't match my expectations
 - It's also a big challenge for me to display `<img>` on the github-page
 - - They work on the local-area but not on the github-page
 - - Every Solution i found is a dead end
+- In the mobile-version the card-container doesn't fit the main-container
+- - There is a black border on the left and right side
 
 ## Author
 

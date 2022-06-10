@@ -99,7 +99,7 @@
     position: absolute;
     top: 0;
     left: 0.5rem;
-    background: url(assets/bg-pattern-2.svg);
+    background-image: url(assets/bg-pattern-2.svg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 80%;
