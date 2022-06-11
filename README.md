@@ -29,7 +29,9 @@ Your users should be able to:
 
 ### Screenshot
 
-![Desktop-Version](/)
+![Mobile-Version](/screenshots/ss_mobile.jpg)
+![Tablet-Version](/screenshots/ss_tablet.jpg)
+![Desktop-Version](/screenshots/ss_desktop.jpg)
 
 ### Links
 
@@ -64,6 +66,10 @@ Doesn't match my expectations
 - - the hover-effect on the icons in the `<footer>`
 - In the mobile-version the card-container doesn't fit the main-container
 - - There is a black border on the left and right side
+
+Conclusion
+
+I feel that I make progress and there are so many things to learn only with regard to HTML and CSS. But that there are so many great developer who share there knowledge and experience is my bright spot during this journey.
 
 ## Author
 
