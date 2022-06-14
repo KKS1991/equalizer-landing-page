@@ -19,67 +19,63 @@
   <title>Frontend Mentor | Equalizer landing page</title>
 </head>
 <body>
-
-  <!--Header with a single logo-->
-  <header id="header">
-    <div class="container header-container">
-      <div class="logo-container-header">
-        <span class="logo"><img src="assets/logo.svg" alt="Logo"></span>
+  <main id="mainpage">
+    <!--Header with a single logo-->
+    <header id="header">
+      <div class="container header-container">
+        <div class="logo-container-header">
+          <span class="logo"><img src="assets/logo.svg" alt="Logo"></span>
+        </div>
+        <div class="text-container">
+          <h1 class="header-title">We make your music sound extraordinary.</h1>
+          <p class="header-description">A system audio equalizer specifically designed for Android and iOS. Freely tune the 
+            way your music sounds with a professional grade parametric EQ & volume mixer. Control 
+            bass, mids, treble, gain control, reverb, and more!</p>
+        </div>
+        <img class="header-img" src="assets/bg-pattern-1.svg" alt="A abstract picture with rounded forms">
       </div>
-      <div class="text-container">
-        <h1 class="header-title">We make your music sound extraordinary.</h1>
-        <p class="header-description">A system audio equalizer specifically designed for Android and iOS. Freely tune the 
-          way your music sounds with a professional grade parametric EQ & volume mixer. Control 
-          bass, mids, treble, gain control, reverb, and more!</p>
-      </div>
-      <img class="header-img" src="assets/bg-pattern-1.svg" alt="A abstract picture with rounded forms">
-    </div>
-  </header>
+    </header>
 
-  <!--Main-Section with an black background with a graphic element. There are a smartphone and a card as further graphic elements with a description and a price-->
-  <section id="main">
-    <div class="container main-container">
-      <img class="main-img--mobile" src="assets/illustration-app.png" alt="A smartphone with an opened App">
-      <div class="card">
-        <h2 class="card-title">Premium EQ</h2>
-        <p class="card-text">Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
-          your listening experience to a whole new level and access all our incredible features!</p>
-        <p class="card-pricing"><span class="card-pricing--big">$4</span>/ month</p>
-        <button type="button" class="btn btn-primary">
-          <a class="btn-download" href="">
-            <img class="btn-icon" src="assets/icon-apple.svg" alt="Apple Icon"/>
-          </a>
+    <!--Main-Section with an black background with a graphic element. There are a smartphone and a card as further graphic elements with a description and a price-->
+    <section id="main">
+      <div class="container main-container">
+        <img class="main-img--mobile" src="assets/illustration-app.png" alt="A smartphone with an opened App">
+        <div class="card">
+          <h2 class="card-title">Premium EQ</h2>
+          <p class="card-text">Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
+            your listening experience to a whole new level and access all our incredible features!</p>
+          <p class="card-pricing"><span class="card-pricing--big">$4</span>/ month</p>
+          <a class="btn-download btn btn-primary" href="">
+              <img class="btn-icon" src="assets/icon-apple.svg" alt="Apple Icon"/>
           iOS Download
-        </button>
-        <button type="button" class="btn btn-secondary">
-          <a class="btn-download" href="">
-            <img class="btn-icon" src="assets/icon-android.svg" alt="Android Icon"/>
           </a>
+          <a class="btn-download btn btn-secondary" href="">
+            <img class="btn-icon" src="assets/icon-android.svg" alt="Android Icon"/>
           Android Download
-        </button>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!--Footer with a logo, a legal- and contact-Information, icons with social-links -->
-  <footer id="footer">
-    <div class="container footer-container">
-      <div class="logo-container-footer">
-        <span class="logo"><img src="assets/logo.svg" alt="Logo"></span>
+    <!--Footer with a logo, a legal- and contact-Information, icons with social-links -->
+    <footer id="footer">
+      <div class="container footer-container">
+        <div class="logo-container-footer">
+          <span class="logo"><img src="assets/logo.svg" alt="Logo"></span>
+        </div>
+        <div class="information-container">
+          <p class="legal-information">All rights reserved © Equalizer 2021</p>
+          <p class="contact-information">Have any problems? Contact us via social media or email us at 
+            <span><a class="email" href="mailto:nequalizer@example.com">nequalizer@example.com</a></span>
+          </p>
+        </div>
+        <div class="social-container">
+            <a href="#" class="social-icon-link"><img class="social-icon" src="assets/icon-facebook.svg" alt="Icon Facebook"></a>
+            <a href="#" class="social-icon-link"><img class="social-icon" src="assets/icon-instagram.svg" alt="Icon Instagram"></a>
+            <a href="#" class="social-icon-link"><img class="social-icon" src="assets/icon-twitter.svg" alt="Icon Twitter"></a>
+        </div>
       </div>
-      <div class="information-container">
-        <p class="legal-information">All rights reserved © Equalizer 2021</p>
-        <p class="contact-information">Have any problems? Contact us via social media or email us at 
-          <span><a class="email" href="mailto:nequalizer@example.com">nequalizer@example.com</a></span>
-        </p>
-      </div>
-      <div class="social-container">
-          <a href="#" class="social-icon-link"><img class="social-icon" src="assets/icon-facebook.svg" alt="Icon Facebook"></a>
-          <a href="#" class="social-icon-link"><img class="social-icon" src="assets/icon-instagram.svg" alt="Icon Instagram"></a>
-          <a href="#" class="social-icon-link"><img class="social-icon" src="assets/icon-twitter.svg" alt="Icon Twitter"></a>
-      </div>
-    </div>
-  </footer>
-
+    </footer>
+  </main>  
 </body>
 </html>
